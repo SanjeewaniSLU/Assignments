@@ -17,9 +17,9 @@ import math
 #print(f"The area of the rectangle:{area:.2f}")
 
 #4.
-#number1 =float(input("Enter one integer numbers:"))
-#number2 =float(input("Enter another integer numbers:"))
-#number3 =float(input("Enter one more integer numbers:"))
+#number1 =float(input("Enter one integer number:"))
+#number2 =float(input("Enter another integer number:"))
+#number3 =float(input("Enter one more integer number:"))
 #sum = number1 + number2 + number3
 #product = number1 * number2 * number3
 #average = sum / 3
