@@ -7,7 +7,7 @@ if z>=42:
 else:
     print(f"Release the zander into tank.It's {42-z}cm below the required length.")
 
-"""
+
 #2
 
 cabin_class = input("Enter the cabin class of cruise ship : ")
@@ -21,3 +21,30 @@ elif cabin_class == 'C':
     print("windowless cabin below the car deck.")
 else:
     print("Invalid cabin class.")
+"""
+
+ #3
+
+gender = input("Enter your biological gender:")
+hemoglobin_level = float(input("Enter your hemoglobin_level in g/l:"))
+if gender == 'female':
+    if hemoglobin_level < 117:
+        print("Your hemoglobin level is low.")
+    elif 117 <= hemoglobin_level <= 155:
+        print("Your hemoglobin level is normal.")
+    elif hemoglobin_level > 155:
+        print("Your hemoglobin level is high.")
+
+elif gender == 'male':
+    if hemoglobin_level < 134:
+        print("Your hemoglobin level is low.")
+    elif 134 <= hemoglobin_level <= 167:
+        print("Your hemoglobin level is normal.")
+    elif hemoglobin_level > 167:
+        print("Your hemoglobin level is high.")
+else:
+    print("Enter correct data again.")
+
+
+
+
