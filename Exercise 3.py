@@ -21,7 +21,7 @@ elif cabin_class == 'C':
     print("windowless cabin below the car deck.")
 else:
     print("Invalid cabin class.")
-"""
+
 
  #3
 
@@ -45,6 +45,17 @@ elif gender == 'male':
 else:
     print("Enter correct data again.")
 
+"""
+
+#4
+
+year = int(input("Enter a year:"))
+if year % 400 == 0 and year % 100 == 0:
+    print("Entered year is a leap year.")
+elif year % 4 == 0 and year % 100 != 0:
+    print("Entered year is a leap year.")
+else:
+    print("Entered year is not a leap year.")
 
 
 
