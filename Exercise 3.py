@@ -1,6 +1,6 @@
 
 #1
-"""
+
 z =float (input("Length of a zander in cm"))
 if z>=42:
     print("Zander fulfills the required length. " )
@@ -45,7 +45,7 @@ elif gender == 'male':
 else:
     print("Enter correct data again.")
 
-"""
+
 
 #4
 
