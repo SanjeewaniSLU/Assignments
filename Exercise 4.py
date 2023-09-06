@@ -32,9 +32,12 @@ while Guess_number != number_1:
      else:
       print("Correct!!!")
 """
-   number = float(input("Enter a number or space:"))
+#5
+correct_username = "hello"
+correct_password = "great"
+
+tries = 0
 
 
-      while number == " ":
-      break
+
 
