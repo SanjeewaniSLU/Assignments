@@ -1,4 +1,4 @@
-"""
+
 list=[]
 while True:
     number = int(input("Enter a number:"))
@@ -9,7 +9,7 @@ while True:
 print("Numbers you have entered:")
 print(list)
 
-"""
+
 shop=[]
 while True:
     cart = input("What you bought from shop:")
