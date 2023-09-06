@@ -1,5 +1,5 @@
 #1
-"""
+
 number = 1
 while number <= 1000:
     if number % 3 == 0:
@@ -8,17 +8,15 @@ while number <= 1000:
 
 
 #2
-number = float(input("Enter a value in Inches:"))
-while number < 0:
-     print ("End")
-     break
-if number >= 0:
-     cm = number * 2.54
-     print(f"Entered value in cms :{cm:.2f}")
-number = float(input("Enter a number or space:"))
-while number == " ":
-      break
+while True:
+    number = float(input('Enter a number: '))
 
+    if number >= 0:
+        cm = number * 2.54
+        print(f"Entered value in cm: {cm:.2f}")
+    else:
+        print("Exiting the program.")
+        break
 
 #4
 
@@ -33,18 +31,22 @@ while Guess_number != number_1:
       print("Too high!")
      else:
       print("Correct!!!")
-
+"""
    number = float(input("Enter a number or space:"))
 
 
       while number == " ":
       break
-"""
+
 number = 0
 while number >= 0:
     if number >= 0:
-        cm = number*2.54
         number = float(input('Enter no: '))
-
+        cm = number*2.54
+        print(f"Entered value in cms :{cm:.2f}")
     else:
+        number < 0
+        print("Exit the program.")
         break
+number=+1
+"""
