@@ -1,5 +1,5 @@
 #1
-
+"""
 number = 1
 while number <= 1000:
     if number % 3 == 0:
@@ -38,15 +38,3 @@ while Guess_number != number_1:
       while number == " ":
       break
 
-number = 0
-while number >= 0:
-    if number >= 0:
-        number = float(input('Enter no: '))
-        cm = number*2.54
-        print(f"Entered value in cms :{cm:.2f}")
-    else:
-        number < 0
-        print("Exit the program.")
-        break
-number=+1
-"""
