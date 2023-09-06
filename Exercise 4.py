@@ -1,5 +1,5 @@
+
 #1
-"""
 number = 1
 while number <= 1000:
     if number % 3 == 0:
@@ -18,6 +18,28 @@ while True:
         print("Exiting the program.")
         break
 
+#3
+smallest_number = None
+largest_number = None
+
+while True:
+    input_number = input("Enter a number or press Enter to quit:")
+    if input_number == "":
+        break
+
+    number = float(input_number)
+
+    if smallest_number is None or number < smallest_number:
+        smallest_number = number
+
+    if largest_number is None or number > largest_number:
+        largest_number = number
+
+if smallest_number is not None and largest_number is not None:
+    print(f"Smallest number: {smallest_number}")
+    print(f"Largest number: {largest_number}")
+
+
 #4
 
 import random
@@ -31,13 +53,24 @@ while Guess_number != number_1:
       print("Too high!")
      else:
       print("Correct!!!")
-"""
+
 #5
+
 correct_username = "hello"
 correct_password = "great"
 
 tries = 0
+while tries < 5:
+   username = input("Enter your Username:")
+   password = input("Enter your Password:")
+   if username == correct_username and password == correct_password:
+      print("Welcome!")
+      break
+   else:
+      print("Incorrect username and password,Please try again.")
+      tries += 1
 
+if tries == 5:
+    print("Access denied.")
 
-
-
+#6
