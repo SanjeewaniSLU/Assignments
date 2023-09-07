@@ -74,3 +74,31 @@ if tries == 5:
     print("Access denied.")
 
 #6
+
+
+import random
+#Total number of random points
+N = int(input("Enter the number of points:"))
+
+#Total number of points in square
+m = 1
+#Total number of points in cirlce
+n = 0
+
+while m <=N:
+     x=random.uniform(-1,1)
+     y=random.uniform(-1,1)
+     if x ** 2 + y ** 2 <= 1:
+         n += 1
+     m = m + 1
+pi = 4 * n / N
+print(f"pi = {pi}")
+
+
+
+
+
+
+
+
+
