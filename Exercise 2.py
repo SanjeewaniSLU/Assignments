@@ -1,12 +1,12 @@
 import math
 #1.
 name = input("What is your name?")
-print(f"Hello,{name}")
+print(f"Hello,{name}!")
 
 #2.
 radius = float(input("Enter radius of the circle:"))
 area = math.pi * radius **2
-print(f"The are of the circle:{area:.2f}")
+print(f"The area of the circle:{area:.2f}")
 
 #3.
 length = float(input("Enter the length of rectangle:"))
