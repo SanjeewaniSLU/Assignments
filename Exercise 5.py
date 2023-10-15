@@ -7,9 +7,9 @@ total_sum = 0
 
 for dice in range(dices):
     roll = random.randint(1,6)
-    print(f"Rolling a die:{roll}")
+    print(f"Value of the die:{roll}")
     total_sum += roll
-print(f"Total sum of {dices} dices numbers: {total_sum}")
+print(f"Total sum of {dices} dices : {total_sum}")
 
 #2
 
@@ -28,20 +28,8 @@ if len(number) >= 5:
     for i in range(5):
         print(number[i])
 
-
-#3
-number=[]
-
-prime_number = number//1 and number//number
-
-while True:
-    integer = int(input("Enter an integer:"))
-    if integer == prime_number:
-        print("It's a prime number.")
-    else:
-        print(f"It's not a prime number.")
-
 """
+
 #4
 cities = []
 for i in range(5):
@@ -51,3 +39,7 @@ for i in range(5):
 print("Names of cities:")
 for index,item in enumerate(cities,start=1):
     print(f"{index}.{item}")
+
+
+
+

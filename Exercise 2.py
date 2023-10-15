@@ -5,7 +5,7 @@ print(f"Hello,{name}!")
 
 #2.
 radius = float(input("Enter radius of the circle:"))
-area = math.pi * radius **2
+area = math.pi * radius ** 2
 print(f"The area of the circle:{area:.2f}")
 
 #3.
