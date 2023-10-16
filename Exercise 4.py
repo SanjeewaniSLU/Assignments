@@ -15,7 +15,7 @@ while True:
         cm = number * 2.54
         print(f"Entered value in cm: {cm:.2f}")
     else:
-        print("Exiting the program.")
+        print("End of the program.")
         break
 
 #3
