@@ -28,19 +28,16 @@ print(f"product of three integer numbers:{product}")
 print(f"average of three integer numbers:{average}")
 
 #5.
-talents = float(input("Enter talents:"))
-pounds = float(input("Enter pounds:"))
-lots = float(input("Enter lots:"))
+talent_g = 20 * 32 * 13.3
+pounds_g = 32 * 13.3
+lots_g = 13.3
 
-talents_g = 20 * 32 * 13.3 * talents
-pounds_g = 32 * 13.3 * pounds
-lots_g = 13.3 * lots
+talents = int(input("Enter talents:\n"))
+pounds = int(input("Enter pounds:\n"))
+lots = float(input("Enter lots:\n"))
 
-mass = talents_g + pounds_g + lots_g
-mass_kg = mass // 1000
-mass_g = mass % 1000
-mass_kg_int = int(mass_kg)
-print(f"The weight in modern units: \n {mass_kg_int} kilograms and {mass_g:.2f} grams.")
+weight = (talents*talent_g) + (pounds*pounds_g) + (lots*lots_g)
+print(f"The weight in modern units:\n{weight//1000} kilograms and {weight % 1000:.2f} grams.")
 
 #6
 import random
