@@ -41,15 +41,14 @@ print(f"The weight in modern units:\n{weight//1000} kilograms and {weight % 1000
 
 #6
 import random
-print('3 digit code')
+
 num1 = random.randint(0,9)
 num2 = random.randint(0,9)
 num3 = random.randint(0,9)
-print(f'Your code is: {num1}{num2}{num3}')
+print(f'Your 3 digit code between 0-9 is: {num1}{num2}{num3}')
 
-print('4 digit code')
 num4 = random.randint(1,6)
 num5 = random.randint(1,6)
 num6 = random.randint(1,6)
 num7 = random.randint(1,6)
-print(f'Your code is: {num4}{num5}{num6}{num7}')
+print(f'Your 4 digit code between 1-6 is: {num4}{num5}{num6}{num7}')
