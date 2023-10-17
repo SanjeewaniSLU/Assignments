@@ -28,6 +28,22 @@ if len(number) >= 5:
     for i in range(5):
         print(number[i])
 
+#3
+
+number = int(input("Please enter a number:"))
+prime = True
+if number <= 1:
+    prime = False
+else:
+    for i in range(2,number):
+        if number % i == 0:
+            prime = False
+            break
+if prime == True:
+    print("This is a prime number.")
+else:
+    print("This is not a prime number.")
+
 #4
 cities = []
 for i in range(5):
