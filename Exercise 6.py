@@ -28,3 +28,15 @@ while True:
         break
 """
 #3
+
+def gal_to_liters(gallons):
+    liters = gallons * 3.7854
+    return liters
+
+while True:
+    gallons = int(input("The number of gallons with gasoline in American : "))
+    if gallons < 0:
+        break
+
+    liters = gal_to_liters(gallons)
+    print(f"{gallons} American gasoline gallons are approximately {liters:.2f} liters.")
