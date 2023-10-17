@@ -35,3 +35,29 @@ while True:
 print("\nList of input names:")
 for name in user_names_set:
     print(name)
+
+#3
+airport_data = {}
+
+while True:
+    print("\nOptions:")
+    print("1. Enter a new airport")
+    print("2. Fetch airport information")
+    print("3. Quit")
+
+    choice = input("Enter your choice (1/2/3): ")
+
+    if choice == '1':
+        icao_code = input("Enter the ICAO code of the airport: ")
+        airport_name = input("Enter the name of the airport: ")
+        airport_data[icao_code] = airport_name
+
+    elif choice == '2':
+        icao_code = input("Enter the ICAO code of the airport: ")
+        if icao_code in airport_data:
+            print(f"The name of the airport is: {airport_data[icao_code]}")
+        else:
+            print("Airport not found.")
+
+    elif choice == '3':
+        break
