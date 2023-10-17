@@ -1,5 +1,5 @@
 #1
-"""
+
 import random
 
 def dice_roll():
@@ -67,4 +67,32 @@ get_list(original_list)
 print(original_list)
 print(new_list)
 
-"""
+
+#6
+import math
+
+def price_pizza_sqm(diameter_cm, price_euro):
+    area = math.pi * (diameter_cm/2) ** 2
+    pizza_area_sqm = area /10000
+    unit_price_per_sqm = price_euro /pizza_area_sqm
+    return  unit_price_per_sqm
+
+def compare_pizzas():
+    diameter1 = float(input("Enter the diameter of the pizza1 (in cm): "))
+    price1 = float(input("Enter the price of the pizza1 (in euros): "))
+
+    diameter2 = float(input("Enter the diameter of the pizza2 (in cm): "))
+    price2 = float(input("Enter the price of the pizza2 (in euros): "))
+
+    unit_price1 = price_pizza_sqm(diameter1, price1)
+    unit_price2 = price_pizza_sqm(diameter2, price2)
+
+
+    if unit_price1 < unit_price2:
+        print(f"The pizza1 provides better value for money.")
+    elif unit_price1 > unit_price2:
+        print(f"The pizza2 provides better value for money.")
+    else:
+        print(f"Both pizzas have the same unit price.")
+
+compare_pizzas()
