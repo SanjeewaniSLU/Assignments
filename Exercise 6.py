@@ -1,7 +1,7 @@
 #1
-
-import random
 """
+import random
+
 def dice_roll():
     return random.randint(1,6)
 
@@ -42,7 +42,6 @@ while True:
     print(f"{gallons} American gasoline gallons are approximately {liters:.2f} liters.")
 
 #4
-numbers = [4, 5, 1, 6, 7]
 
 def sum_of_list(numbers):
     total = 0
@@ -50,8 +49,22 @@ def sum_of_list(numbers):
         total += num
     return total
 
+numbers = [4, 5, 1, 6, 7]
 result = sum_of_list(numbers)
 print(f"The sum of the numbers in the list is: {result}")
 
-"""
+
 #5
+new_list = []
+
+def get_list (numbers):
+    for i in numbers:
+        if i % 2 == 0:
+            new_list.append(i)
+
+original_list = [4, 5, 1, 6, 7]
+get_list(original_list)
+print(original_list)
+print(new_list)
+
+"""
