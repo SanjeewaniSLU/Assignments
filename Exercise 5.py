@@ -1,5 +1,5 @@
 #1
-"""
+
 import random
 
 dices = int(input("How many dice to roll?"))
@@ -13,7 +13,7 @@ print(f"Total sum of {dices} dices : {total_sum}")
 
 #2
 
-number=[]
+number = []
 
 while True:
     input_number = input("Enter a number or press Enter to quit:")
@@ -28,7 +28,7 @@ if len(number) >= 5:
     for i in range(5):
         print(number[i])
 
-"""
+
 
 #4
 cities = []
