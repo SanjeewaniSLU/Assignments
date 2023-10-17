@@ -25,11 +25,11 @@ while True:
     name = input("Enter a name or press 'Enter' to quit: ")
     if name == "":
         break
-    user_names_set.add(name)
-    if len(user_names_set) == 1:
-        print("New name")
-    else:
+    if name in user_names_set:
         print("Existing name")
+    else:
+        print("New name")
+        user_names_set.add(name)
 
 
 print("\nList of input names:")
