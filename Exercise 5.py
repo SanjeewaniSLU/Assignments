@@ -28,8 +28,6 @@ if len(number) >= 5:
     for i in range(5):
         print(number[i])
 
-
-
 #4
 cities = []
 for i in range(5):
