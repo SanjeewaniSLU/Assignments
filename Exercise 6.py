@@ -26,7 +26,7 @@ while True:
     print(f"You rolled the dice, {result}")
     if result == num_sides_dice:
         break
-"""
+
 #3
 
 def gal_to_liters(gallons):
@@ -40,3 +40,18 @@ while True:
 
     liters = gal_to_liters(gallons)
     print(f"{gallons} American gasoline gallons are approximately {liters:.2f} liters.")
+
+#4
+numbers = [4, 5, 1, 6, 7]
+
+def sum_of_list(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+result = sum_of_list(numbers)
+print(f"The sum of the numbers in the list is: {result}")
+
+"""
+#5
