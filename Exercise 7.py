@@ -17,3 +17,21 @@ else:
     print("Invalid input. Please enter a number between 1 and 12.")
     exit()
 print(f"The season for month {number_of_month} is {season}.")
+
+#2
+user_names_set = set()
+
+while True:
+    name = input("Enter a name or press 'Enter' to quit: ")
+    if name == "":
+        break
+    user_names_set.add(name)
+    if len(user_names_set) == 1:
+        print("New name")
+    else:
+        print("Existing name")
+
+
+print("\nList of input names:")
+for name in user_names_set:
+    print(name)
