@@ -1,11 +1,11 @@
-# Exercise -1
+# -1
 class Car:
     def __init__(self,reg_no, max_speed):
         self.reg_no = reg_no
         self.max_speed = max_speed
         self.current_speed = 0
         self.travelled_distance = 0
-# Exercise -2
+# -2
 
     def accelerate(self, change):
         new_speed = self.current_speed + change
@@ -15,7 +15,7 @@ class Car:
             self.current_speed = self.max_speed
         else:
             self.current_speed = new_speed
-# Exercise -3
+# -3
 
     def drive(self, hours):
         distance = self.current_speed * hours
@@ -42,8 +42,7 @@ my_car.accelerate(60)
 my_car.drive(1.5)
 print(f"New Travelled Distance:", my_car.travelled_distance, "km")
 
-# Exercise -4
-
+# -4
 
 import random
 
@@ -69,7 +68,7 @@ for car in cars:
     print(f"Registration Number:", car.reg_no)
     print(f"Maximum Speed:", car.max_speed, " km/h")
     print(f"Current Speed:", self.current_speed, " km/h")
-    # print(f"Travelled Distance:", car.travelled_distance, " km")
+    print(f"Travelled Distance:", car.travelled_distance, " km")
     print("-" * 30)
 
 
