@@ -57,17 +57,17 @@ for i in range(1, 11):
 
 def accelerate(self,current_speed):
     change_speed = random.randint(-15, 10)
-    self.current_speed += change_speed
+    car.current_speed += change_speed
 
 
 def drive(self, hours=1):
-        self.travelled_distance = self.current_speed * 1
+        car.travelled_distance = car.current_speed * 1
 
 
 for car in cars:
     print(f"Registration Number:", car.reg_no)
     print(f"Maximum Speed:", car.max_speed, " km/h")
-    print(f"Current Speed:", self.current_speed, " km/h")
+    print(f"Current Speed:", car.current_speed, " km/h")
     print(f"Travelled Distance:", car.travelled_distance, " km")
     print("-" * 30)
 
