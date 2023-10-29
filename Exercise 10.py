@@ -1,8 +1,8 @@
 # -1
 class Elevator:
-    def __init__(self,top,bottom):
-        self.top = top
-        self.bottom = bottom
+    def __init__(self,top_floor,bottom_floor):
+        self.top = top_floor
+        self.bottom = bottom_floor
         self.current = self.bottom
 
     def floor_up(self):
@@ -23,7 +23,7 @@ class Elevator:
 
 
 h = Elevator(10,0,)
-h.go_to_floor(6)
+h.go_to_floor(5)
 h.go_to_floor(0)
 
 
