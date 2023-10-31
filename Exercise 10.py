@@ -46,19 +46,26 @@ class Building:
         else:
             print("No such elevator.")
 
+# -3
 
-b = Building(10,1,5)
+    def fire_alarm(self):
+        print("Fire alarm!!!.All elevators move to down.")
+        h.go_to_floor(0)
+
+#2
+
+b = Building(10,0,5)
+print(f"list of elevators.{b.list_elevators}")
 b.run_elevator(1, 5)
 b.run_elevator(2, 4)
 
-
-# -3
-    def fire_alarm(self):
-        print("There is a fire alarm in your building. All elevators go down")
-        h.go_to_floor(0)
-
+#3
 
 b.fire_alarm()
+
+
+
+
 
 
 
