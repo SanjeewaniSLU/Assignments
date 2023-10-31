@@ -71,6 +71,9 @@ while True:
     if win_match == True:
         break
 
+print("-.-" * 15)
+print("   The properties of 10 cars of the race.")
+print("-.-" * 15)
 for car in cars:
     print(f"Registration Number:", car.reg_no)
     print(f"Maximum Speed:", car.max_speed, " km/h")
