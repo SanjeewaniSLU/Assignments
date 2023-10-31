@@ -3,7 +3,7 @@ class Elevator:
     def __init__(self,top_floor, bottom_floor):
         self.top_floor = top_floor
         self.bottom_floor = bottom_floor
-        self.current = self.bottom_floor
+        self.current = bottom_floor
 
     def floor_up(self):
         if self.current < self.top_floor:
@@ -30,30 +30,33 @@ h.go_to_floor(0)
 
 
 class Building:
-    def __init__(self, no_top, no_bottom, no_elevators):
-        self.no_top = no_top
-        self.no_bottom = no_bottom
-        self.no_elevator = no_elevators
+    def __init__(self, top_floor, bottom_floor, elevators):
+        self.top_floor = top_floor
+        self.bottom_floor = bottom_floor
+        self.elevators = elevators
         self.list_elevators = []
-        for num in range(0,no_elevators):
-            elevator = Elevator(self.top_floor,self.bottom_floor)
+        for num in range(0, elevators):
+            elevator = Elevator(self.top_floor, self.bottom_floor)
             self.list_elevators.append(elevator)
 
-    def run_elevator(self,no_elevator,des_floor):
-        if no_elevator in self.list_elevators:
-            print(f" Elevator number,{[no_elevator-1]} go to the floor{des_floor}")
-            h.go_to_floor(des_floor)
+    def run_elevator(self, no_elevator, des_floor):
+        if no_elevator < len(self.list_elevators):
+            print(f"Elevator number {no_elevator} go to the floor {des_floor}")
+            self.list_elevators[no_elevator].go_to_floor(des_floor)
         else:
-            print(f"No of elevator is wrong.")
+            print("No such elevator.")
 
 
-b = Building(10,1,3)
-print(f"These are the elevators in building 1,{b.list_elevators}")
+b = Building(10,1,5)
+b.run_elevator(1, 5)
+b.run_elevator(2, 4)
+
 
 # -3
     def fire_alarm(self):
         print("There is a fire alarm in your building. All elevators go down")
         h.go_to_floor(0)
+
 
 b.fire_alarm()
 
