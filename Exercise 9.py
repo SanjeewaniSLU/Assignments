@@ -5,6 +5,7 @@ class Car:
         self.max_speed = max_speed
         self.current_speed = 0
         self.travelled_distance = 0
+        self.brake = -200
 # -2
 
     def accelerate(self, change):
@@ -35,10 +36,11 @@ print(f"Current Speed after acceleration:", my_car.current_speed, " km/h")
 my_car.accelerate(50)
 print(f"Current Speed after acceleration:", my_car.current_speed, " km/h")
 
-my_car.accelerate(-200)
+
+my_car.brake
 print(f"Final Speed after emergency brake:", my_car.current_speed, " km/h")
 
-my_car.accelerate(60)
+# my_car.accelerate(60)
 my_car.drive(1.5)
 print(f"New Travelled Distance:", my_car.travelled_distance, "km")
 
@@ -54,15 +56,20 @@ for i in range(1, 11):
     new_car = Car(registration_number, maximum_speed)
     cars.append(new_car)
 
+no_hours = 0
 
-def accelerate(self,current_speed):
-    change_speed = random.randint(-15, 10)
-    car.current_speed += change_speed
+while True:
+    win_match = False
+    for car in cars:
+        car.accelerate(random.randint(-10, 15))
+        car.drive(1)
+        if car.travelled_distance >= 10000:
+            win_match = True
+            break
+        no_hours += 1
 
-
-def drive(self, hours=1):
-        car.travelled_distance = car.current_speed * 1
-
+    if win_match == True:
+        break
 
 for car in cars:
     print(f"Registration Number:", car.reg_no)
@@ -70,6 +77,7 @@ for car in cars:
     print(f"Current Speed:", car.current_speed, " km/h")
     print(f"Travelled Distance:", car.travelled_distance, " km")
     print("-" * 30)
+
 
 
 
