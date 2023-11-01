@@ -63,7 +63,7 @@ b.run_elevator(2, 4)
 #-3
 
 b.fire_alarm()
-h.go_to_floor()
+
 
 #-4
 
