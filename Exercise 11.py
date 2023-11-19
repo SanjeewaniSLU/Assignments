@@ -13,7 +13,7 @@ class Book(Publication):
     def print_information(self):
         print(f"Name of Book: {self.name}")
         print(f"Author of Book: {self.author}")
-        print(f"Page_count of Book: {self.page_count}")
+        print(f"Page_count of Book: {self.page_count} pages.")
 
 
 class Magazine(Publication):
