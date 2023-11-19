@@ -5,7 +5,7 @@ class Publication:
 
 
 class Book(Publication):
-    def __init__(self,name, author, page_count):
+    def __init__(self, name, author, page_count):
         super().__init__(name)
         self.author = author
         self.page_count = page_count
@@ -26,10 +26,12 @@ class Magazine(Publication):
         print(f"Chief Editor of magazine: {self.chief_editor}")
 
 
-Donald_Duck = Magazine(name="Donald Duck", chief_editor="Aki Hyyppä")
 Compartment_no_6 = Book(name="Compartment No. 6", author="Rosa Liksom", page_count=192)
-print("-.-" * 12)
-Donald_Duck.print_information()
+Donald_Duck = Magazine(name="Donald Duck", chief_editor="Aki Hyyppä")
+
 print("-.-" * 12)
 Compartment_no_6.print_information()
 print("-.-" * 12)
+Donald_Duck.print_information()
+print("-.-" * 12)
+
