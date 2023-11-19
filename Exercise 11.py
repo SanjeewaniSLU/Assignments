@@ -37,6 +37,7 @@ print("-.-" * 12)
 
 # -2
 
+
 class Car:
     def __init__(self,reg_no, max_speed):
         self.reg_no = reg_no
