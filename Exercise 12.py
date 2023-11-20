@@ -1,5 +1,4 @@
 # -1
-
 import requests
 
 request = "https://api.chucknorris.io/jokes/random"
@@ -26,7 +25,7 @@ def convert_temp(k_degrees):
     return c_degrees
 
 
-API_key = "431389535137a2d86ca93751ba58ad38"
+API_key = ""
 city = input(" Enter a city name:")
 
 
